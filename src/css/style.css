@@ -1,0 +1,33 @@
+/* Custom Styles: Additional CSS overrides and utilities for the website */
+
+/* Material Symbols: Configure icon font variations for consistent styling */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glass Text Effect: Backdrop blur for text elements */
+.text-glass {
+    backdrop-filter: blur(12px);
+}
+
+/* Signature Gradient: Brand color gradient used for CTAs and highlights */
+.signature-gradient {
+    background: linear-gradient(135deg, #00652c 0%, #15803d 100%);
+}
+
+/* Glass Navigation: Semi-transparent navigation background */
+.glass-nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+}
+
+/* Industrial Gradient: Alternative gradient for industrial-themed elements */
+.industrial-gradient {
+    background: linear-gradient(135deg, #00652c 0%, #15803d 100%);
+}
+
+/* Glass Header: Semi-transparent header background with blur */
+.glass-header {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+}

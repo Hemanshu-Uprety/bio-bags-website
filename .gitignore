@@ -8,7 +8,10 @@ dist/
 
 # Environment variables
 .env
+.env.local
 
 # Editor / OS files
 .vscode/
 .DS_Store
+.vercel
+.env*.local
