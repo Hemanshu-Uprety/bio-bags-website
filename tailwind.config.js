@@ -1,8 +1,6 @@
-/**
- * Tailwind CSS Browser Configuration: Custom theme settings for the website.
- * Load immediately after https://cdn.tailwindcss.com so `tailwind` exists.
- */
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./*.html"],
 
   theme: {
     extend: {
@@ -14,17 +12,17 @@ tailwind.config = {
       // Custom color palette with moss green theme
       colors: {
         moss: {
-          50: "#f3faf5",   // Lightest moss green
+          50: "#f3faf5", // Lightest moss green
           100: "#dff5e8",
           200: "#c2ead3",
           300: "#94d9b2",
           400: "#5ec08a",
-          500: "#36a368",  // Primary moss green
+          500: "#36a368", // Primary moss green
           600: "#278351",
           700: "#216843",
           800: "#1e5337",
           900: "#1a442f",
-          950: "#092518",  // Darkest moss green
+          950: "#092518", // Darkest moss green
         },
         // Warm stone background color
         stone: {
@@ -39,9 +37,10 @@ tailwind.config = {
       keyframes: {
         fadeUp: {
           "0%": { opacity: "0", transform: "translateY(16px)" }, // Start state
-          "100%": { opacity: "1", transform: "translateY(0)" },   // End state
+          "100%": { opacity: "1", transform: "translateY(0)" }, // End state
+        },
       },
     },
   },
-},
-}
+  plugins: [],
+};

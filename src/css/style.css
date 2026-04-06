@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* Custom Styles: Additional CSS overrides and utilities for the website */
 
 /* Material Symbols: Configure icon font variations for consistent styling */
