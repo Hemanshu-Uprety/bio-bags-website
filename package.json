@@ -1,7 +1,7 @@
 {
   "name": "abi-biobags-udyog-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "A manufacturing company website",
   "main": "index.js",
   "scripts": {
   "build:css": "tailwindcss -i ./src/css/style.css -o ./src/css/output.css --watch"
