@@ -16,6 +16,11 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+.headline {
     font-family: 'Manrope', sans-serif;
+}
+
+.text-shadow-premium {
+    text-shadow: 0 4px 12px rgba(1, 45, 29, 0.2);
 }

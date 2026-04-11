@@ -10,43 +10,49 @@
         content="ABI Bio Bags Udyog — Manufacturer of biodegradable carry bags using PBAT and biofiller. B2B bulk supply for retailers, supermarkets, and distributors." />
     <title>ABI Bio Bags Udyog | Sustainable Packaging for Business</title>
     <!-- Google Fonts: Loading custom fonts for display and body text -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
         rel="stylesheet" />
-    <!-- Tailwind CDN: Load runtime first, then browser theme extension for styling -->
-    <!-- Custom Stylesheet: Additional CSS for custom styles and overrides -->
-    <link rel="stylesheet" href="../public/output.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="../dist/output.css" />
 </head>
 
-<!-- Body: Main document content -->
+<!-- Body: Main content container for the webpage -->
 
-<body class="bg-stone-warm text-moss-950 antialiased font-sans">
+<body class="bg-surface text-on-surface antialiased">
     <!-- Header: Site navigation and branding -->
     <header
-        class="fixed top-0 inset-x-0 z-50 border-b border-moss-900/5 bg-white backdrop-blur-xl transition-[background,box-shadow] duration-300"
+        class="fixed top-0 inset-x-0 z-50 border-b border-green-800/50 bg-white backdrop-blur-xl transition-[background,box-shadow] duration-300"
         id="site-header">
         <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-4 md:px-8 lg:px-10">
+            <!-- Logo: Company branding with link to home -->
             <a href="../index.html" class="group flex flex-col leading-tight">
                 <span
-                    class="font-display text-lg font-semibold tracking-tight text-moss-950 transition-colors group-hover:text-moss-700 md:text-xl">ABI
+                    class="font-display text-lg font-semibold tracking-tight text-black transition-colors md:text-xl">ABI
                     Bio Bags Udyog</span>
-                <span class="text-[11px] font-medium uppercase tracking-[0.2em] text-moss-600/80">Biodegradable
+                <span
+                    class="text-[11px] font-medium uppercase tracking-[0.2em] text-black hover:text-green-600">Biodegradable
                     packaging</span>
             </a>
-            <nav class="hidden items-center gap-9 text-sm font-medium text-moss-800 md:flex" aria-label="Primary">
-                <a href="../index.html" class="transition-colors hover:text-moss-600">Home</a>
-                <a href="about.html" class="transition-colors hover:text-moss-600">About Us</a>
-                <a href="products.html" class="transition-colors hover:text-moss-600">Our Products</a>
-                <a href="printing.html" class="transition-colors hover:text-moss-600">Customized Printing</a>
-                <a href="contact.html" class="transition-colors hover:text-moss-600">Contact</a>
-                <a href="contact.html#cta"
-                    class="rounded-full bg-moss-800 px-5 py-2.5 text-white shadow-sm transition-all duration-200 hover:bg-moss-700 hover:shadow-md">Request
+            <!-- Desktop Navigation: Main site links -->
+            <nav class="hidden items-center gap-9 text-sm font-medium md:flex" aria-label="Primary">
+                <a href="../index.html" class="transition-colors hover:text-green-600">Home</a>
+                <a href="about.html" class="transition-colors hover:text-green-600">About Us</a>
+                <a href="products.html" class="transition-colors hover:text-green-600">Our Products</a>
+                <a href="printing.html" class="transition-colors hover:text-green-600">Customized Printing</a>
+                <a href="contact.html" class="transition-colors hover:text-green-600">Contact</a>
+                <a href="../index.html#cta"
+                    class="rounded-full bg-green-900 px-5 py-2.5 text-white shadow-sm transition-all duration-200 hover:bg-green-600 hover:shadow-md">Request
                     a Quote</a>
             </nav>
+            <!-- Mobile Menu Toggle: Hamburger button for mobile navigation -->
             <button type="button"
-                class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-moss-900/10 bg-white text-moss-900 shadow-sm transition hover:border-moss-900/20 hover:bg-moss-50 md:hidden"
+                class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-green-800/50 bg-white text- shadow-sm transition hover:border-green-900/20 hover:bg-green-100 md:hidden"
                 id="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
                 <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     aria-hidden="true">
@@ -55,62 +61,159 @@
                 </svg>
             </button>
         </div>
-        <div class="hidden border-t border-moss-900/5 bg-white/95 px-5 py-6 backdrop-blur-xl md:hidden" id="mobile-nav">
+        <!-- Mobile Navigation: Collapsible menu for mobile devices -->
+        <div class="hidden border-t border-green-900/5 bg-white/95 px-5 py-6 backdrop-blur-xl md:hidden"
+            id="mobile-nav">
             <nav class="flex flex-col gap-1 text-base font-medium" aria-label="Mobile">
-                <a href=".//index.html" class="rounded-xl px-4 py-3 text-moss-800 transition hover:bg-moss-50">Home</a>
-                <a href="about.html" class="rounded-xl px-4 py-3 text-moss-800 transition hover:bg-moss-50">About Us</a>
-                <a href="products.html" class="rounded-xl px-4 py-3 text-moss-800 transition hover:bg-moss-50">Our
+                <a href="../index.html"
+                    class="rounded-xl px-4 py-3 text-green-800 transition hover:bg-green-100">Home</a>
+                <a href="about.html" class="rounded-xl px-4 py-3 text-green-800 transition hover:bg-green-100">About
+                    Us</a>
+                <a href="products.html" class="rounded-xl px-4 py-3 text-green-800 transition hover:bg-green-100">Our
                     Products</a>
                 <a href="printing.html"
-                    class="rounded-xl px-4 py-3 text-moss-800 transition hover:bg-moss-50">Customized
+                    class="rounded-xl px-4 py-3 text-green-800 transition hover:bg-green-100">Customized
                     Printing</a>
                 <a href="contact.html"
-                    class="rounded-xl px-4 py-3 text-moss-800 transition hover:bg-moss-50">Contact</a>
-                <a href="contact.html#cta"
-                    class="mt-2 rounded-full bg-moss-800 px-4 py-3 text-center text-white transition hover:bg-moss-700">Request
+                    class="rounded-xl px-4 py-3 text-green-800 transition hover:bg-green-100">Contact</a>
+                <a href="../index.html#cta"
+                    class="mt-2 rounded-full bg-green-800 px-4 py-3 text-center text-white transition hover:bg-green-700">Request
                     a Quote</a>
             </nav>
         </div>
     </header>
 
-    <main class="pt-24">
-        <!-- Hero Section: Page introduction with background image -->
-        <section class="relative min-h-[70vh] flex items-center overflow-hidden" aria-label="Hero">
-            <div class="absolute inset-0">
-                <img src="../assets/images/contactpageimg.jpg" alt="" width="2400" height="1600"
-                    class="h-full w-full object-cover" role="presentation" />
-                <div class="absolute inset-0 bg-gradient-to-br from-moss-950/85 via-moss-900/70 to-moss-950/80"></div>
-                <div
-                    class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(255,255,255,0.12),_transparent_55%)]">
-                </div>
+    <main class="max-w-7xl mx-auto px-8 py-20">
+        <div class="mb-20 max-w-3xl">
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-primary mb-6 leading-tight">
+                Architectural Integrity meets <span class="text-on-primary-container">Ecology.</span>
+            </h1>
+            <p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                Connect with our industrial consultants to discuss high-performance biodegradable solutions for your
+                large-scale logistics and manufacturing needs.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+            <div class="lg:col-span-7 bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+                <h2 class="text-2xl font-bold text-primary mb-8 tracking-tight">Project Inquiry</h2>
+                <form class="space-y-6" id="contact-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-on-surface-variant font-label">Full
+                                Name</label>
+                            <input
+                                class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all duration-200 outline-none placeholder:text-outline-variant/60"
+                                placeholder="John Doe" type="text" />
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-sm font-medium text-on-surface-variant font-label">Business
+                                Email</label>
+                            <input
+                                class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all duration-200 outline-none placeholder:text-outline-variant/60"
+                                placeholder="j.doe@industrial.com" type="email" />
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-on-surface-variant font-label">Phone Number</label>
+                        <input
+                            class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all duration-200 outline-none placeholder:text-outline-variant/60"
+                            placeholder="+1 (555) 000-0000" type="tel" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-medium text-on-surface-variant font-label">Message /
+                            Specification Requirements</label>
+                        <textarea
+                            class="w-full px-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary-fixed focus:bg-surface-container-lowest transition-all duration-200 outline-none placeholder:text-outline-variant/60 resize-none"
+                            placeholder="Tell us about your volume requirements and material specifications..."
+                            rows="5"></textarea>
+                    </div>
+                    <button
+                        class="w-full md:w-auto px-10 py-4 round-full bg-primary text-on-primary font-bold rounded-lg hover:bg-primary-container transition-all duration-300 shadow-lg shadow-primary/10"
+                        type="submit">
+                        Submit Inquiry
+                    </button>
+                </form>
             </div>
-            <div
-                class="relative mx-auto flex w-full max-w-7xl flex-col justify-center px-5 pb-16 pt-16 md:px-8 md:pb-20 md:pt-20 lg:px-10 lg:pb-24 lg:pt-24">
-                <p
-                    class="mb-5 max-w-xl text-xs font-semibold uppercase tracking-[0.35em] text-moss-200/90 animate-fade-up opacity-0 [animation-delay:0.05s] md:text-sm">
-                    Get in Touch · Let's talk</p>
-                <h1
-                    class="max-w-4xl font-display text-4xl font-semibold leading-tight mb-6 tracking-tight text-white sm:text-5xl md:text-5xl lg:text-7xl animate-fade-up opacity-0 [animation-delay:0.12s]">
-                    Let's talk about your packaging needs.
-                </h1>
-                <p
-                    class="mt-8 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl animate-fade-up opacity-0 [animation-delay:0.2s]">
-                    Whether you're interested in our standard carry bags, custom printing options, or have questions
-                    about our biodegradable materials — our team is ready to help.
-                </p>
-                <div
-                    class="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center animate-fade-up opacity-0 [animation-delay:0.28s]">
-                    <a href="#cta"
-                        class="inline-flex items-center justify-center rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-moss-900 shadow-lg transition duration-200 hover:bg-moss-50 hover:shadow-xl">
-                        Send us a Message
-                    </a>
-                    <a href="contact.html#contact-info"
-                        class="inline-flex items-center justify-center rounded-full border border-white/35 bg-white/5 px-8 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition duration-200 hover:border-white/55 hover:bg-white/10">
-                        Contact Information
-                    </a>
-                </div>
+            <div class="lg:col-span-5 space-y-12">
+                <section class="space-y-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary">location_on</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-primary mb-1">Industrial Headquarters</h3>
+                                <p class="text-on-surface-variant text-sm leading-relaxed">
+                                    8822 Ecology Way, Suite 400<br />
+                                    Sustainable District, Seattle, WA 98101
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary">call</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-primary mb-1">Direct Line</h3>
+                                <p class="text-on-surface-variant text-sm">+1 (800) BIO-PACK</p>
+                                <p class="text-outline text-xs mt-1">Mon-Fri: 8:00 AM – 6:00 PM PST</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                                <span class="material-symbols-outlined text-primary">alternate_email</span>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-primary mb-1">Industrial Relations</h3>
+                                <p class="text-on-surface-variant text-sm">logistics@biopack-industrial.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="h-64 bg-surface-container-high rounded-xl overflow-hidden relative grayscale hover:grayscale-0 transition-all duration-700">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Minimalist grayscale satellite view map of an industrial district in Seattle with clean geometric lines and soft contrast"
+                            data-location="Seattle, WA"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiaIS0uXXIIr7jzIFf_DSdAs59F_BpjHKVWR__3jiafxUvoEow7fF2bX-ItuUuVDUmekAP38Oa8Z-rfr__03YdQX3DSeZ_aWgX223A6PmFKK16i3clnDoIXYsP4wobSLV7Yndknjk3HO7UrPw_ykBQEn3ZHE5LAVKZFOaKlOMkq3XceDE99xDUJxEkBcb-Zp_zxCdIb2_3Yndi5MfD0GjQQXfKtM-uDXm0EZszj-AUU1sm12gyJEviBrKUp_ePy92BPCdifTuuxEE" />
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div class="w-8 h-8 bg-primary rounded-full border-4 border-white animate-pulse"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="p-8 bg-surface-container-low rounded-xl">
+                    <h3
+                        class="font-headline font-extrabold text-sm uppercase tracking-widest text-on-surface-variant mb-6">
+                        Global Certifications</h3>
+                    <div
+                        class="grid grid-cols-3 gap-6 opacity-80 grayscale hover:grayscale-0 transition-all duration-500">
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <span class="material-symbols-outlined text-3xl text-primary"
+                                style="font-variation-settings: 'FILL' 1;">eco</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant font-headline">BPI
+                                Compostable</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <span class="material-symbols-outlined text-3xl text-primary"
+                                style="font-variation-settings: 'FILL' 1;">verified</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant font-headline">ISO
+                                14001</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center space-y-2">
+                            <span class="material-symbols-outlined text-3xl text-primary"
+                                style="font-variation-settings: 'FILL' 1;">psychology_alt</span>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-tighter text-on-surface-variant font-headline">ASTM
+                                D6400</span>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
+        </div>
 
         <!-- Contact Information Section: Contact methods and response times -->
         <section id="contact-info" class="bg-stone-warm py-20 md:py-28">
@@ -167,7 +270,7 @@
         </section>
 
         <!-- Contact Section: Quote request form with company information -->
-        <section id="cta" class="scroll-mt-24 py-24 md:py-32 bg-stone-warm">
+        <section id="cta" class="scroll-mt-24 py-24 md:py-32 bg-stone-100">
             <div class="mx-auto max-w-7xl px-5 md:px-8 lg:px-10">
                 <!-- Contact Form Header: Introduction to quote request -->
                 <div class="max-w-2xl mx-auto text-center mb-16">
@@ -185,14 +288,14 @@
                     <div class="flex flex-col gap-2">
                         <label class="text-moss-950 text-sm font-bold" for="full-name">Full Name</label>
                         <input
-                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-moss-600 text-moss-950"
+                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-green-600 text-moss-950"
                             id="full-name" name="full_name" placeholder="e.g. John Doe" required="" type="text" />
                     </div>
                     <!-- Company Name Field: Required business name input -->
                     <div class="flex flex-col gap-2">
                         <label class="text-moss-950 text-sm font-bold" for="company-name">Company Name</label>
                         <input
-                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-moss-600 text-moss-950"
+                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-green-600 text-moss-950"
                             id="company-name" name="company_name" placeholder="e.g. EcoRetail Ltd" required=""
                             type="text" />
                     </div>
@@ -200,14 +303,14 @@
                     <div class="flex flex-col gap-2">
                         <label class="text-moss-950 text-sm font-bold" for="email-address">Email Address</label>
                         <input
-                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-moss-600 text-moss-950"
+                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-green-600 text-moss-950"
                             id="email-address" name="email" placeholder="name@company.com" required="" type="email" />
                     </div>
                     <!-- Phone Field: Optional contact phone input -->
                     <div class="flex flex-col gap-2">
                         <label class="text-moss-950 text-sm font-bold" for="phone-number">Phone Number</label>
                         <input
-                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-moss-600 text-moss-950"
+                            class="w-full px-6 py-3 rounded-xl border border-moss-900/20 bg-white focus:ring-2 focus:ring-moss-600 focus:border-green-600 text-moss-950"
                             id="phone-number" name="phone" placeholder="+977 9XXXXXXXXX" type="tel" />
                     </div>
                     <!-- Volume Field: Estimated monthly bag requirements -->
@@ -235,7 +338,7 @@
                     <!-- Submit Button: Form submission for quote request -->
                     <div class="md:col-span-2 flex justify-center mt-4">
                         <button type="submit"
-                            class="bg-moss-800 text-white px-12 py-4 rounded-xl font-extrabold hover:bg-moss-700 transition-all shadow-lg w-full md:w-auto">Request
+                            class="bg-green-900 text-white px-12 py-4 rounded-xl font-extrabold hover:bg-green-600 transition-all shadow-lg w-full md:w-auto">Request
                             Custom Quote</button>
                     </div>
                 </form>
@@ -256,56 +359,57 @@
     </main>
 
     <!-- Footer Section: Company information and navigation links -->
-    <footer class="border-t border-moss-900/10 bg-stone-warm">
+    <footer class="border-t border-green-900/50 bg-stone-100">
         <div class="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-12 md:gap-10 md:px-8 lg:px-10">
             <!-- Company Info: Brand name and description -->
             <div class="md:col-span-5">
-                <p class="font-display text-xl font-semibold text-moss-950">ABI Bio Bags Udyog</p>
-                <p class="mt-4 max-w-sm text-sm leading-relaxed text-moss-800/80">
+                <p class="font-display text-xl font-semibold text-green-950">ABI Bio Bags Udyog</p>
+                <p class="mt-4 max-w-sm text-sm leading-relaxed">
                     Biodegradable carry bags manufactured with PBAT and biofiller. Order-based production and bulk
                     supply for
                     retail, wholesale, and distribution partners.
                 </p>
             </div>
             <!-- Quick Links: Site navigation -->
-            <div class="md:col-span-3">
-                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-moss-700">Quick links</p>
-                <ul class="mt-4 space-y-3 text-sm font-medium text-moss-800">
-                    <li><a class="transition hover:text-moss-600" href="../index.html">Home</a></li>
-                    <li><a class="transition hover:text-moss-600" href="about.html">About</a></li>
-                    <li><a class="transition hover:text-moss-600" href="products.html">Products</a></li>
-                    <li><a class="transition hover:text-moss-600" href="printing.html">Custom printing</a></li>
-                    <li><a class="transition hover:text-moss-600" href="contact.html">Contact</a></li>
-                    <li><a class="transition hover:text-moss-600" href="contact.html#cta">Request a quote</a></li>
+            <div class="md:col-span-3 text-black">
+                <p class="text-xs font-semibold uppercase tracking-[0.2em]  text-green-950 ">Quick links</p>
+                <ul class="mt-4 space-y-3 text-sm font-medium">
+                    <li><a class="transition hover:text-green-600" href="../index.html">Home</a></li>
+                    <li><a class="transition hover:text-green-600" href="about.html">About</a></li>
+                    <li><a class="transition hover:text-green-600" href="products.html">Products</a></li>
+                    <li><a class="transition hover:text-green-600" href="printing.html">Custom printing</a></li>
+                    <li><a class="transition hover:text-green-600" href="contact.html">Contact</a></li>
+                    <li><a class="transition hover:text-green-600" href="../index.html#cta">Request a quote</a></li>
                 </ul>
             </div>
 
             <!-- Contact Info: Company contact details -->
-            <div class="md:col-span-4">
-                <p class="text-xs font-semibold uppercase tracking-[0.2em] text-moss-700">Contact</p>
-                <ul class="mt-4 space-y-4 text-sm text-moss-800/90">
+            <div class="md:col-span-4 text-black">
+                <p class="text-xs font-semibold uppercase tracking-[0.2em]  text-green-950">Contact</p>
+                <ul class="mt-4 space-y-4 text-sm ">
                     <li>
-                        <span class="block font-medium text-moss-950">Email</span>
-                        <a class="transition hover:text-moss-600" href="">info@abibiodegradable.com.np</a>
+                        <span class="block font-medium  text-green-950">Email</span>
+                        <a class="transition hover:text-green-600" href="">info@abibiodegradable.com.np</a>
                     </li>
                     <li>
-                        <span class="block font-medium text-moss-950">Phone</span>
-                        <a href="tel:+977 9852643400" class="transition hover:text-moss-600">+977 9852643400</a>
+                        <span class="block font-medium  text-green-950">Phone</span>
+                        <a href="tel:+977 9852643400" class="transition hover:text-green-600">+977 9852643400</a>
                     </li>
                     <li>
-                        <span class="block font-medium text-moss-950">Location</span>
-                        <a href="https://maps.google.com/?q=Nepal" class="transition hover:text-moss-600"
+                        <span class="block font-medium text-green-950">Location</span>
+                        <a href="https://maps.google.com/?q=Nepal" class="transition hover:text-green-600"
                             target="_blank" rel="noopener noreferrer">Nepal</a>
                     </li>
                 </ul>
             </div>
         </div>
         <!-- Copyright Notice: Legal footer -->
-        <div class="border-t border-moss-900/10 py-6">
-            <p class="text-center text-xs text-moss-700/90 font-bold">© 2026 ABI Bio Bags Udyog. All rights reserved.
+        <div class="border-t border-green-900/10 py-6">
+            <p class="text-center text-xs  font-bold">© 2026 ABI Bio Bags Udyog. All rights reserved.
             </p>
         </div>
     </footer>
+
 
     <!-- WhatsApp Floating Button: Direct contact via WhatsApp -->
     <a href="https://wa.me/9852643400?text=Hello%20ABI%20Bio%20Bags%20Udyog%2C%20I%20would%20like%20to%20inquire%20about%20your%20biodegradable%20packaging%20solutions."
@@ -319,6 +423,7 @@
 
     <!-- Main JavaScript: Site-wide behaviors and interactions -->
     <script src="../src/js/main.js" defer></script>
+
 
 </body>
 
